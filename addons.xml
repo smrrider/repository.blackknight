@@ -20,7 +20,7 @@
     <news>1.0.0 - First repository release. Serves Black Knight 2.7.1 (clean defaults).</news>
   </extension>
 </addon>
-<addon id="plugin.video.blackknight" name="Black Knight" version="2.7.1" provider-name="BlackKnight">
+<addon id="plugin.video.blackknight" name="Black Knight" version="2.7.2" provider-name="BlackKnight">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
   </requires>
@@ -36,7 +36,7 @@
     </assets>
     <summary lang='en_GB'>Movies and TV from Netflix, Prime, Disney+, Hulu, Max, and more via Real-Debrid</summary>
     <description lang='en_GB'>Browse content from Netflix, Amazon Prime Video, Disney+, Hulu, Peacock, Paramount+, Apple TV+, Max, and Tubi â€” auto-populated via TMDB watch providers. Stream via Real-Debrid with Trakt scrobbling and watchlist sync.</description>
-    <news>2.7.1 - Same Search Streaming Services as 2.7.0. Default TMDB, Real-Debrid and Trakt keys are left blank; enter your TMDB API key and pair Real-Debrid and Trakt in Settings. More Like This fix carried forward.</news>
+    <news>2.7.2 - Search Streaming Services: picking a movie or show plays it inside Black Knight (movies go to sources, TV opens seasons). Open in the official app and Where else to watch are on the context menu. Live TV is unchanged.</news>
     <disclaimer lang='en_GB'>Requires a TMDB API key and Real-Debrid account.</disclaimer>
   </extension>
 </addon>

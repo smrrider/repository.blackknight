@@ -23,4 +23,6 @@ Direct zip URL (Downloader, etc.):
 
 After the repository is installed, Kodi will offer Black Knight updates when a new version is published here.
 
-Current add-on: Black Knight 2.7.1.
+Current add-on: Black Knight 2.7.2.
+
+Kodi will offer the update from 2.7.1 automatically once this repository is installed.
