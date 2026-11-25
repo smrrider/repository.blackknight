@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="repository.blackknight" name="Black Knight Repository" version="1.0.0" provider-name="BlackKnight">
+  <extension point="xbmc.addon.repository" name="Black Knight Repository">
+    <dir>
+      <info compressed="false">https://smrrider.github.io/repository.blackknight/addons.xml</info>
+      <checksum>https://smrrider.github.io/repository.blackknight/addons.xml.md5</checksum>
+      <datadir zip="true">https://smrrider.github.io/repository.blackknight/zips/</datadir>
+    </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Black Knight add-on repository</summary>
+    <description lang="en_GB">Install once, then Kodi will offer Black Knight updates automatically. Used for the Captain's boxes and Haley's Fire Stick.</description>
+    <disclaimer lang="en_GB">This is a private family repository. After installing Black Knight, enter your own TMDB API key and pair Real-Debrid and Trakt in Settings.</disclaimer>
+    <platform>all</platform>
+    <license>GPL-2.0-only</license>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+    <news>1.0.0 - First repository release. Serves Black Knight 2.7.1 (clean defaults).</news>
+  </extension>
+</addon>
+<addon id="plugin.video.blackknight" name="Black Knight" version="2.7.1" provider-name="BlackKnight">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+<extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <license>GPL-2.0-only</license>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+    <summary lang='en_GB'>Movies and TV from Netflix, Prime, Disney+, Hulu, Max, and more via Real-Debrid</summary>
+    <description lang='en_GB'>Browse content from Netflix, Amazon Prime Video, Disney+, Hulu, Peacock, Paramount+, Apple TV+, Max, and Tubi â€” auto-populated via TMDB watch providers. Stream via Real-Debrid with Trakt scrobbling and watchlist sync.</description>
+    <news>2.7.1 - Same Search Streaming Services as 2.7.0. Default TMDB, Real-Debrid and Trakt keys are left blank; enter your TMDB API key and pair Real-Debrid and Trakt in Settings. More Like This fix carried forward.</news>
+    <disclaimer lang='en_GB'>Requires a TMDB API key and Real-Debrid account.</disclaimer>
+  </extension>
+</addon>
+</addons>
