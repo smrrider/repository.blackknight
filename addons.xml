@@ -40,18 +40,20 @@
     <disclaimer lang='en_GB'>Requires a TMDB API key and Real-Debrid account.</disclaimer>
   </extension>
 </addon>
-<addon id="plugin.video.mycloudshare" name="My Cloud Share" version="1.0.0" provider-name="John DeBok">
+<addon id="plugin.video.mycloudshare" name="My Cloud Share" version="1.0.1" provider-name="John DeBok">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
   </extension>
+  <extension point="xbmc.service" library="service.py" start="startup"/>
   <extension point="xbmc.addon.metadata">
     <summary lang="en_GB">Browse and play a WD My Cloud OS5 public share link</summary>
     <description lang="en_GB">Reads a WD My Cloud OS5 share link (os5.mycloud.com/action/share/...) and lets you browse its folders and stream the videos, with seeking. No account needed, just the link.</description>
     <platform>all</platform>
     <license>MIT</license>
+    <news>1.0.1: Fix .mp4 playback. A small local relay adds the file-size header the WD cloud leaves out, so Kodi can seek to the mp4 index. JPEGs named .MP4 are no longer listed as videos. Kodi 19 listing fallback.</news>
   </extension>
 </addon>
 </addons>
